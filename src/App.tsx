@@ -1,7 +1,14 @@
 import React from 'react';
 
+import Home from './pages/Home';
+
+import GlobalStyle from './styles/global';
+
 const App: React.FC = () => (
-  <h1>Traveler</h1>
+  <>
+    <Home />
+    <GlobalStyle />
+  </>
 );
 
 export default App;
