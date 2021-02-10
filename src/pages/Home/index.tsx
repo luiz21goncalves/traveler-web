@@ -4,14 +4,17 @@ import image1 from '../../assets/image-1.png';
 import image2 from '../../assets/image-2.png';
 import image3 from '../../assets/image-3.png';
 import image4 from '../../assets/image-4.png';
+import logo from '../../assets/logo.png';
 import Card from '../../components/Card';
-import Header from '../../components/Header';
 
-import { Container, Section } from './styles';
+import { Container, Header, Section } from './styles';
 
 const Home: React.FC = () => (
   <Container>
-    <Header />
+    <Header>
+      <img src={logo} alt="Traveler logo" />
+      <button type="button">Acesso restrito</button>
+    </Header>
 
     <main>
       <div>
