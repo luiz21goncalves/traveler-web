@@ -3,16 +3,15 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  padding: 24px 160px 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 
   main {
     flex: 1;
-    margin-top: 12px;
     display: flex;
     justify-content: space-between;
+    padding: 0 160px;
 
     div {
       width: 329px;
@@ -45,6 +44,24 @@ export const Container = styled.div`
         color: #ffffff;
       }
     }
+  }
+`;
+
+export const Header = styled.header`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 160px 16px;
+
+  button {
+    width: 174px;
+    height: 48px;
+    background: #dde9f0;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #115d8c;
   }
 `;
 
