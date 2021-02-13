@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
+  max-width: 1120px;
   height: 100%;
-  overflow: hidden;
+  margin: 0 auto;
 
   main {
-    padding: 40px 160px;
+    padding: 40px 0;
 
     div:first-child {
       display: flex;
@@ -53,7 +54,7 @@ export const Container = styled.div`
 
     section {
       display: grid;
-      grid-template-columns: repeat(5, auto);
+      grid-template-columns: repeat(4, auto);
       justify-content: space-between;
       gap: 32px;
       margin-top: 39px;
