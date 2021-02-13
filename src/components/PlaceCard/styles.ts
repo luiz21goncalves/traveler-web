@@ -16,22 +16,6 @@ export const Container = styled.div`
     object-fit: fill;
     border-radius: 16px 16px 0 0;
   }
-
-  div:last-child {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-
-    span {
-      color: #617480;
-      font-family: 'Barlow';
-      font-size: 16px;
-      line-height: 26px;
-      font-weight: 500;
-    }
-  }
 `;
 
 export const Label = styled.div`
@@ -73,5 +57,21 @@ export const Content = styled.div`
     line-height: 25px;
     color: #123952;
     font-weight: 600;
+  }
+`;
+
+export const Footer = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+
+  span {
+    color: #617480;
+    font-family: 'Barlow';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
   }
 `;

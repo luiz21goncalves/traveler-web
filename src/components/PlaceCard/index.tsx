@@ -2,7 +2,7 @@ import React from 'react';
 import { FiStar } from 'react-icons/fi';
 import { IconBaseProps } from 'react-icons/lib';
 
-import { Container, Label, Content } from './styles';
+import { Container, Label, Content, Footer } from './styles';
 
 interface PlaceCardProps {
   stars: string;
@@ -34,10 +34,10 @@ const PlacesCard: React.FC<PlaceCardProps> = ({
         <strong>{title}</strong>
       </Content>
 
-      <div>
+      <Footer>
         <span>{text}</span>
         <Icon color="#F25D27" size={24} />
-      </div>
+      </Footer>
     </Container>
   );
 };
