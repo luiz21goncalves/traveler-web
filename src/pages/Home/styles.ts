@@ -1,49 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  max-width: 1120px;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  margin: 0 auto;
 
   main {
     flex: 1;
     display: flex;
     justify-content: space-between;
-    padding: 0 160px;
-
-    div {
-      width: 329px;
-
-      h1 {
-        margin-top: 138px;
-        font-weight: 600;
-        font-size: 80px;
-        line-height: 74px;
-        font-family: 'Barlow';
-        margin-bottom: 40px;
-        color: #123952;
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 30px;
-        color: #617480;
-      }
-
-      button {
-        margin-top: 48px;
-        width: 100%;
-        height: 72px;
-        font-size: 18px;
-        line-height: 26px;
-        border: none;
-        border-radius: 10px;
-        background: #f25d27;
-        color: #ffffff;
-      }
-    }
   }
 `;
 
@@ -52,7 +20,8 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 160px 16px;
+  padding: 24px 0 0;
+  margin-bottom: 16px;
 
   button {
     width: 174px;
@@ -65,17 +34,48 @@ export const Header = styled.header`
   }
 `;
 
+export const TextContainer = styled.div`
+  width: 329px;
+
+  h1 {
+    margin-top: 138px;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 74px;
+    font-family: 'Barlow';
+    margin-bottom: 40px;
+    color: #123952;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #617480;
+  }
+
+  button {
+    margin-top: 48px;
+    width: 100%;
+    height: 72px;
+    font-size: 18px;
+    line-height: 26px;
+    border: none;
+    border-radius: 10px;
+    background: #f25d27;
+    color: #ffffff;
+  }
+`;
+
 export const Section = styled.section`
-  height: 100%;
   display: grid;
   grid-template-columns: 304px 304px;
   gap: 32px;
 
-  div:last-child article:first-child {
+  article:nth-child(2) {
     margin-top: 76px;
   }
-
+  /*
   div article + article {
     margin-top: 32px;
-  }
+  } */
 `;
