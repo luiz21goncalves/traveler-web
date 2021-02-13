@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.article`
-  width: 304px;
-  height: 316px;
+  width: 100%;
+  max-width: 256px;
+  height: 266px;
   border-radius: 10px;
   background: #ffffff;
 
