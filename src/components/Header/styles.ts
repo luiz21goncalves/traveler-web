@@ -2,11 +2,17 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
   width: 100%;
+  background: #ffffff;
+`;
+
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 1120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 160px;
-  background: #ffffff;
+  margin: 0 auto;
+  padding: 35px 0;
 
   div {
     width: 416px;
@@ -16,7 +22,6 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 16px;
     border: 1px solid #dce2e6;
 
     svg {
