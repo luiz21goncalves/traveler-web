@@ -12,7 +12,7 @@ import { Container, Header, TextContainer, Section } from './styles';
 const Home: React.FC = () => (
   <Container>
     <Header>
-      <img src={logo} alt="Traveler logo" />
+      <img src={logo} alt="Traveler" />
       <button type="button">Acesso restrito</button>
     </Header>
 
@@ -27,13 +27,17 @@ const Home: React.FC = () => (
       </TextContainer>
 
       <Section>
-        <Card image={image1} city="Florianópolis" numberPlaces={98} />
-        <Card image={image2} city="Blumenau" numberPlaces={29} />
-        <Card image={image1} city="Florianópolis" numberPlaces={98} />
+        <div>
+          <Card image={image1} city="Florianópolis" numberPlaces={98} isHome />
+          <Card image={image2} city="Blumenau" numberPlaces={29} isHome />
+          <Card image={image1} city="Florianópolis" numberPlaces={98} isHome />
+        </div>
 
-        <Card image={image3} city="Bombinas" numberPlaces={43} />
-        <Card image={image4} city="Águas Mornas" numberPlaces={13} />
-        <Card image={image3} city="Bombinas" numberPlaces={43} />
+        <div>
+          <Card image={image3} city="Bombinas" numberPlaces={43} isHome />
+          <Card image={image4} city="Águas Mornas" numberPlaces={13} isHome />
+          <Card image={image3} city="Bombinas" numberPlaces={43} isHome />
+        </div>
       </Section>
     </main>
   </Container>

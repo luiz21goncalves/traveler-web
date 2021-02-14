@@ -5,28 +5,40 @@ export const Container = styled.article`
   max-width: 256px;
   height: 266px;
   border-radius: 10px;
-  background: #ffffff;
+  background: ${props => props.theme.colors.shapeLight};
 
   img {
     width: 100%;
-    height: 200px;
+    height: 175px;
+    display: block;
     border-radius: 10px 10px 0 0;
   }
 
   div {
     padding: 25px;
 
-    p {
+    strong {
+      font-family: ${props => props.theme.fonts.title};
       font-weight: 600;
       font-size: 23px;
       line-height: 23px;
-      color: #123952;
+      color: ${props => props.theme.colors.title};
       margin-bottom: 8px;
+      display: block;
     }
 
     span {
-      color: #617480;
-      font-family: 'Roboto';
+      color: ${props => props.theme.colors.text};
+      font-family: ${props => props.theme.fonts.secondary};
+    }
+  }
+
+  &.large {
+    max-width: 304px;
+    height: 316px;
+
+    img {
+      height: 200px;
     }
   }
 `;

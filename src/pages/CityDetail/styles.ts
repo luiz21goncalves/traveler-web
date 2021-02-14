@@ -18,6 +18,31 @@ export const Container = styled.div`
   }
 `;
 
+export const HaederContent = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 34px;
+  }
+
+  > span {
+    font-family: ${props => props.theme.fonts.title};
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: ${props => props.theme.colors.complements};
+  }
+`;
+
 export const Banner = styled.img`
   width: 100%;
   height: 340px;
@@ -29,8 +54,8 @@ export const Details = styled.div`
   width: 506px;
 
   h1 {
-    color: #123952;
-    font-family: 'Barlow';
+    color: ${props => props.theme.colors.title};
+    font-family: ${props => props.theme.fonts.title};
     font-weight: 600;
     font-size: 54px;
     line-height: 54px;
@@ -38,7 +63,7 @@ export const Details = styled.div`
   }
 
   p {
-    color: #123952;
+    color: ${props => props.theme.colors.title};
     font-family: 'Heebo';
     font-size: 20px;
     line-height: 30px;
@@ -46,8 +71,7 @@ export const Details = styled.div`
   }
 
   span {
-    color: #617480;
-    font-family: 'Heebo';
+    color: ${props => props.theme.colors.text};
     font-size: 16px;
     line-height: 26px;
   }
@@ -61,8 +85,8 @@ export const PointsContainer = styled.div`
 
 export const TopRated = styled.div`
   h2 {
-    color: #123952;
-    font-family: 'Barlow';
+    color: ${props => props.theme.colors.title};
+    font-family: ${props => props.theme.fonts.title};
     font-size: 36px;
     line-height: 46px;
     font-weight: 600;
@@ -81,7 +105,7 @@ export const Highlight = styled.div`
   height: 286px;
   display: flex;
   margin-top: 80px;
-  background: #ffffff;
+  background: ${props => props.theme.colors.shapeLight};
   border-radius: 16px;
 
   & > div {
@@ -92,7 +116,7 @@ export const Highlight = styled.div`
     div {
       width: 120px;
       height: 36px;
-      background: #f25d27;
+      background: ${props => props.theme.colors.orange};
       display: flex;
       align-items: center;
       padding: 8px 16px;
@@ -104,24 +128,24 @@ export const Highlight = styled.div`
 
       span {
         font-size: 14px;
-        font-family: 'Barlow';
+        font-family: ${props => props.theme.fonts.title};
         font-weight: 600;
-        color: #ffffff;
+        color: ${props => props.theme.colors.shapeLight};
       }
     }
 
     h3 {
       margin-top: 32px;
       margin-bottom: 16px;
-      font-family: 'Barlow';
+      font-family: ${props => props.theme.fonts.title};
       font-weight: 600;
       font-size: 36px;
       line-height: 36px;
-      color: #123952;
+      color: ${props => props.theme.colors.title};
     }
 
     p {
-      color: #617480;
+      color: ${props => props.theme.colors.text};
       font-size: 16px;
       line-height: 26px;
     }
@@ -141,28 +165,28 @@ export const BestPlaces = styled.div`
 
     h3 {
       margin-bottom: 16px;
-      font-family: 'Barlow';
+      font-family: ${props => props.theme.fonts.title};
       font-weight: 600;
       font-size: 36px;
       line-height: 36px;
-      color: #123952;
+      color: ${props => props.theme.colors.title};
     }
 
     nav {
-      border-bottom: 1px solid #dce2e5;
+      border-bottom: 1px solid ${props => props.theme.colors.shapeGray};
 
       button {
         background: transparent;
         border: none;
         height: 100%;
-        color: #617480;
+        color: ${props => props.theme.colors.text};
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
 
         &:first-child {
-          color: #123952;
-          border-bottom: 2px solid #f25d27;
+          color: ${props => props.theme.colors.title};
+          border-bottom: 2px solid ${props => props.theme.colors.orange};
           font-family: 'Roboto';
           font-weight: 700;
         }

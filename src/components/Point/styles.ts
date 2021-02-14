@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 160px;
   height: 268px;
-  background: #ffffff;
-  border: 1px solid #dce2e6;
+  background: ${props => props.theme.colors.shapeLight};
+  border: 1px solid ${props => props.theme.colors.shapeGray};
   border-radius: 20px;
 
   div:nth-child(1) {
@@ -12,7 +12,7 @@ export const Container = styled.div`
     align-items: center;
     height: 104px;
     padding: 32px;
-    border-bottom: 1px solid #dce2e6;
+    border-bottom: 1px solid ${props => props.theme.colors.shapeGray};
   }
 
   div:nth-child(2) {
@@ -20,18 +20,17 @@ export const Container = styled.div`
     padding: 32px;
 
     strong {
-      color: #123952;
+      color: ${props => props.theme.colors.title};
       font-size: 40px;
-      font-family: 'Barlow';
+      font-family: ${props => props.theme.fonts.title};
       margin-bottom: 16px;
       display: block;
     }
 
     span {
-      font-family: 'Heebo';
       font-size: 16px;
       line-height: 22px;
-      color: #617480;
+      color: ${props => props.theme.colors.text};
       line-break: loose;
     }
   }

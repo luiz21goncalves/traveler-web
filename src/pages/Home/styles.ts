@@ -26,11 +26,11 @@ export const Header = styled.header`
   button {
     width: 174px;
     height: 48px;
-    background: #dde9f0;
+    background: ${props => props.theme.colors.blueLow};
     border: none;
     border-radius: 10px;
     font-weight: 500;
-    color: #115d8c;
+    color: ${props => props.theme.colors.blue};
   }
 `;
 
@@ -42,15 +42,15 @@ export const TextContainer = styled.div`
     font-weight: 600;
     font-size: 80px;
     line-height: 74px;
-    font-family: 'Barlow';
+    font-family: ${props => props.theme.fonts.title};
     margin-bottom: 40px;
-    color: #123952;
+    color: ${props => props.theme.colors.title};
   }
 
   p {
     font-size: 20px;
     line-height: 30px;
-    color: #617480;
+    color: ${props => props.theme.colors.text};
   }
 
   button {
@@ -61,8 +61,8 @@ export const TextContainer = styled.div`
     line-height: 26px;
     border: none;
     border-radius: 10px;
-    background: #f25d27;
-    color: #ffffff;
+    background: ${props => props.theme.colors.red};
+    color: ${props => props.theme.colors.shapeLight};
   }
 `;
 
@@ -71,11 +71,11 @@ export const Section = styled.section`
   grid-template-columns: 304px 304px;
   gap: 32px;
 
-  article:nth-child(2) {
+  > div:nth-child(2) {
     margin-top: 76px;
   }
-  /*
-  div article + article {
+
+  > div article + article {
     margin-top: 32px;
-  } */
+  }
 `;

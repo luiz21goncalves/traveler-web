@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   width: 256px;
   height: 307px;
-  background: #ffffff;
-  border: 1px solid #dce2e5;
+  background: ${props => props.theme.colors.shapeLight};
+  border: 1px solid ${props => props.theme.colors.shapeGray};
   border-radius: 16px;
   position: relative;
   display: flex;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 export const Label = styled.div`
   width: 56px;
   height: 83px;
-  background: #f25d27;
+  background: ${props => props.theme.colors.orange};
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -33,13 +33,13 @@ export const Label = styled.div`
   left: 24px;
 
   svg {
-    fill: #ffffff;
+    fill: ${props => props.theme.colors.shapeLight};
   }
 
   span {
-    font-family: 'Barlow';
+    font-family: ${props => props.theme.fonts.title};
     font-weight: 600;
-    color: #f5f8fa;
+    color: ${props => props.theme.colors.background};
     font-size: 20px;
     line-height: 25px;
   }
@@ -48,14 +48,14 @@ export const Label = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #dce2e6;
+  border-bottom: 1px solid ${props => props.theme.colors.shapeGray};
 
   strong {
     margin: 24px;
-    font-family: 'Barlow';
+    font-family: ${props => props.theme.fonts.title};
     font-size: 20px;
     line-height: 25px;
-    color: #123952;
+    color: ${props => props.theme.colors.title};
     font-weight: 600;
   }
 `;
@@ -68,8 +68,8 @@ export const Footer = styled.div`
   padding: 24px;
 
   span {
-    color: #617480;
-    font-family: 'Barlow';
+    color: ${props => props.theme.colors.text};
+    font-family: ${props => props.theme.fonts.title};
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;

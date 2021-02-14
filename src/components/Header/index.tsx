@@ -1,20 +1,16 @@
 import React from 'react';
-import { FiSearch } from 'react-icons/fi';
 
 import logo from '../../assets/logo.png';
 
 import { Container, Wrapper } from './styles';
 
-const Header: React.FC = () => {
+const Header: React.FC = ({ children }) => {
   return (
     <Container>
       <Wrapper>
         <img src={logo} alt="Traveler logo" />
 
-        <div>
-          <FiSearch size={20} color="#a0acb2" />
-          <input type="text" placeholder="Qual cidade você procura?" />
-        </div>
+        {children}
 
         <button type="button">Acesso restrito</button>
       </Wrapper>

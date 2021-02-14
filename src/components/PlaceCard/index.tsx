@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FiStar } from 'react-icons/fi';
 import { IconBaseProps } from 'react-icons/lib';
+
+import { ThemeContext } from 'styled-components';
 
 import { Container, Label, Content, Footer } from './styles';
 
@@ -21,11 +23,13 @@ const PlacesCard: React.FC<PlaceCardProps> = ({
   text,
   icon: Icon,
 }) => {
+  const { colors } = useContext(ThemeContext);
+
   return (
     <Container>
       <Content>
         <Label>
-          <FiStar size={20} color="#ffffff" />
+          <FiStar size={20} color={colors.shapeLight} />
           <span>{stars}</span>
         </Label>
 
@@ -36,7 +40,7 @@ const PlacesCard: React.FC<PlaceCardProps> = ({
 
       <Footer>
         <span>{text}</span>
-        <Icon color="#F25D27" size={24} />
+        <Icon color={colors.orange} size={24} />
       </Footer>
     </Container>
   );
