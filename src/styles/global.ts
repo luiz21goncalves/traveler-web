@@ -18,7 +18,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #F5F8FA;
+  background: #e5e5e5;
   }
 
   button {
