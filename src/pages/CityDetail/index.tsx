@@ -6,6 +6,7 @@ import {
   FiAlertCircle,
   FiArrowLeft,
 } from 'react-icons/fi';
+import { useHistory } from 'react-router-dom';
 
 import { ThemeContext } from 'styled-components';
 
@@ -33,11 +34,13 @@ import {
 
 const CityDetail: React.FC = () => {
   const { colors } = useContext(ThemeContext);
+  const { goBack } = useHistory();
+
   return (
     <Container>
       <Header>
         <HaederContent>
-          <button type="button">
+          <button type="button" onClick={() => goBack()}>
             <FiArrowLeft size={20} color={colors.complements} />
           </button>
           <span>Cidade</span>

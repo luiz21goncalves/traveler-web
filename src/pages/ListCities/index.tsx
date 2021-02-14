@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { FiSearch, FiChevronDown } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 import { ThemeContext } from 'styled-components';
 
@@ -43,22 +44,69 @@ const ListCities: React.FC = () => {
         </Heading>
 
         <section>
-          <Card image={image1} city="Águas Mornas" numberPlaces={13} />
-          <Card image={image2} city="Bombinhas" numberPlaces={43} />
-          <Card image={image3} city="Blumenau" numberPlaces={29} />
-          <Card image={image4} city="Florianópolis" numberPlaces={98} />
-          <Card image={image5} city="Imbituba" numberPlaces={61} />
-          <Card image={image6} city="Jaraguá do Sul" numberPlaces={41} />
-          <Card image={image7} city="Lages" numberPlaces={19} />
-          <Card image={image8} city="Rio do Sul" numberPlaces={27} />
-          <Card image={image1} city="Águas Mornas" numberPlaces={13} />
-          <Card image={image2} city="Bombinhas" numberPlaces={43} />
-          <Card image={image3} city="Blumenau" numberPlaces={29} />
-          <Card image={image4} city="Florianópolis" numberPlaces={98} />
-          <Card image={image5} city="Imbituba" numberPlaces={61} />
-          <Card image={image6} city="Jaraguá do Sul" numberPlaces={41} />
-          <Card image={image7} city="Lages" numberPlaces={19} />
-          <Card image={image8} city="Rio do Sul" numberPlaces={27} />
+          <Link to="/city-detail">
+            <Card image={image1} city="Águas Mornas" numberPlaces={13} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image2} city="Bombinhas" numberPlaces={43} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image3} city="Blumenau" numberPlaces={29} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image4} city="Florianópolis" numberPlaces={98} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image5} city="Imbituba" numberPlaces={61} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image6} city="Jaraguá do Sul" numberPlaces={41} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image7} city="Lages" numberPlaces={19} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image8} city="Rio do Sul" numberPlaces={27} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image1} city="Águas Mornas" numberPlaces={13} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image2} city="Bombinhas" numberPlaces={43} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image3} city="Blumenau" numberPlaces={29} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image4} city="Florianópolis" numberPlaces={98} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image5} city="Imbituba" numberPlaces={61} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image6} city="Jaraguá do Sul" numberPlaces={41} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image7} city="Lages" numberPlaces={19} />
+          </Link>
+
+          <Link to="/city-detail">
+            <Card image={image8} city="Rio do Sul" numberPlaces={27} />
+          </Link>
         </section>
       </main>
     </Container>
