@@ -15,6 +15,10 @@ export const Container = styled.div`
       justify-content: space-between;
       gap: 32px;
       margin-top: 39px;
+
+      a {
+        text-decoration: none;
+      }
     }
   }
 `;
