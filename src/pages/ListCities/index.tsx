@@ -1,5 +1,7 @@
-import React from 'react';
-import { FiChevronDown } from 'react-icons/fi';
+import React, { useContext } from 'react';
+import { FiSearch, FiChevronDown } from 'react-icons/fi';
+
+import { ThemeContext } from 'styled-components';
 
 import image1 from '../../assets/image-1.png';
 import image2 from '../../assets/image-2.png';
@@ -12,15 +14,22 @@ import image8 from '../../assets/image-8.png';
 import Card from '../../components/Card';
 import Header from '../../components/Header';
 
-import { Container } from './styles';
+import { Container, HeaderContent, Heading } from './styles';
 
 const ListCities: React.FC = () => {
+  const { colors } = useContext(ThemeContext);
+
   return (
     <Container>
-      <Header />
+      <Header>
+        <HeaderContent>
+          <FiSearch size={20} color={colors.complements} />
+          <input type="text" placeholder="Qual cidade você procura?" />
+        </HeaderContent>
+      </Header>
 
       <main>
-        <div>
+        <Heading>
           <h1>Selecione uma cidade</h1>
 
           <div>
@@ -28,10 +37,10 @@ const ListCities: React.FC = () => {
             <button type="button">Mais acessadas</button>
             <button type="button">
               A - Z
-              <FiChevronDown size={10} color="#F25D27" />
+              <FiChevronDown size={10} color={colors.orange} />
             </button>
           </div>
-        </div>
+        </Heading>
 
         <section>
           <Card image={image1} city="Águas Mornas" numberPlaces={13} />

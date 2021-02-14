@@ -1,5 +1,13 @@
-import React from 'react';
-import { FiCamera, FiCoffee, FiCalendar, FiAlertCircle } from 'react-icons/fi';
+import React, { useContext } from 'react';
+import {
+  FiCamera,
+  FiCoffee,
+  FiCalendar,
+  FiAlertCircle,
+  FiArrowLeft,
+} from 'react-icons/fi';
+
+import { ThemeContext } from 'styled-components';
 
 import image1 from '../../assets/Foto (1).png';
 import image2 from '../../assets/Foto (2).png';
@@ -13,6 +21,7 @@ import Point from '../../components/Point';
 
 import {
   Container,
+  HaederContent,
   Banner,
   Details,
   PointsContainer,
@@ -23,9 +32,18 @@ import {
 } from './styles';
 
 const CityDetail: React.FC = () => {
+  const { colors } = useContext(ThemeContext);
   return (
     <Container>
-      <Header />
+      <Header>
+        <HaederContent>
+          <button type="button">
+            <FiArrowLeft size={20} color={colors.complements} />
+          </button>
+          <span>Cidade</span>
+          <div />
+        </HaederContent>
+      </Header>
 
       <Banner src={image} alt="Nome da Cidade" />
 
@@ -96,7 +114,7 @@ const CityDetail: React.FC = () => {
         <Highlight>
           <div>
             <div>
-              <FiAlertCircle size={20} color="#FFFFFF" />
+              <FiAlertCircle size={20} color={colors.shapeLight} />
               <span>Destaque</span>
             </div>
 

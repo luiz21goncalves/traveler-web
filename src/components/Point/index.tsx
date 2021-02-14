@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { IconBaseProps } from 'react-icons/lib';
+
+import { ThemeContext } from 'styled-components';
 
 import { Container } from './styles';
 
@@ -10,10 +12,12 @@ interface PointProps {
 }
 
 const Point: React.FC<PointProps> = ({ icon: Icon, score, text }) => {
+  const { colors } = useContext(ThemeContext);
+
   return (
     <Container>
       <div>
-        <Icon size={40} color="#F25D27" />
+        <Icon size={40} color={colors.orange} />
       </div>
 
       <div>
