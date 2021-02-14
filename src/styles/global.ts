@@ -9,8 +9,7 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
 
   body, input, button {
@@ -19,7 +18,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #F5F8FA;
+  background: #e5e5e5;
   }
 
   button {

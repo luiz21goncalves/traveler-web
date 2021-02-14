@@ -1,13 +1,14 @@
 import React from 'react';
 
+import CityDetail from './pages/CityDetail';
+import Home from './pages/Home';
 import ListCities from './pages/ListCities';
-// import Home from './pages/Home';
 
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
   <>
-    <ListCities />
+    <CityDetail />
     <GlobalStyle />
   </>
 );
