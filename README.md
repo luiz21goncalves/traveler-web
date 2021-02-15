@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+## Traveler
+> Uma criação do **@Tiago Luchtenberg** disponibilizada como recompensa pela **@Rocketseat** no bootcamp **GoStack**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Gif Apresentação do projeto](./assets/Peek%202021-02-15%2017-50.gif)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Acesse a demostração [clicando aqui](https://traveler-luizgoncalves.netlify.app/).
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dia a dia do projeto
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. [Day 01](https://www.linkedin.com/posts/luiz21goncalves_dayabr01-reactjs-rocketseat-activity-6765385121408409600-b_u_) Página Home.
+2. [Day 02](https://www.linkedin.com/posts/luiz21goncalves_dayabr02-reactjs-rocketseat-activity-6765734625756110849-dJeg) Página de listagem de cidades.
+3. **Day 03** sem alterações.
+4. **Day 04** sem alterações.
+5. **Day 05** sem alterações.
+6. [Day 06](https://www.linkedin.com/posts/luiz21goncalves_dayabr06-reactjs-rocketseat-activity-6767186023110729728-7kZU) Página de detalhe da cidade, navegação, padronização de commits. tema styled-components.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Para executar o projeto em sua máquina
 
-### `yarn build`
+``` bash
+git clone https://github.com/luiz21goncalves/traveler-web.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd traveler-web
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+yarn or npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+yarn start or npm rum start
+```
