@@ -1,5 +1,5 @@
 ## Traveler
-> Uma criação do **@Tiago Luchtenberg** disponibilizada como recompensa pela **@Rocketseat** no bootcamp **GoStack**.
+> Uma criação do [**@Tiago Luchtenberg**](https://www.instagram.com/TiagoLuchtenberg/) disponibilizada como recompensa pela [**@Rocketseat**](https://rocketseat.com.br/) no bootcamp **GoStack**.
 
 ![Gif Apresentação do projeto](./assets/Peek%202021-02-15%2017-50.gif)
 
